@@ -1,0 +1,63 @@
+@font-face {
+  font-family: "Segoe UI";
+  src: url("../../fonts/SegoeUI.ttf");
+}
+
+@font-face {
+  font-family: "Segoe UI Regular";
+  src: url("../../fonts/SegoeUIRegular.ttf");
+}
+
+.block {
+  $self: &;
+  margin-bottom: 100px;
+  margin-top: 40px;
+
+  &__name {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    margin: 10px;
+    margin-left: 30px;
+  }
+
+  &__content__one {
+    background-image: linear-gradient(
+        to top,
+        rgba(36, 36, 36, 0.3),
+        rgba(48, 47, 47, 0.3)
+      ),
+      url("../../images/des.block.one.png");
+    margin: 5px;
+    padding: 30px;
+    width: 220px;
+    height: 255px;
+  }
+
+  &__content__one img {
+    margin-left: 30px;
+  }
+
+  &__content__one h1 {
+    margin-top: 20px;
+    font-size: 17px;
+    color: #b1ff53;
+    font-family: "Segoe UI", sans-serif;
+    padding-left: -10px;
+  }
+
+  &__content__one p {
+    font-size: 15px;
+    color: white;
+    font-family: "Segoe UI Regular";
+  }
+
+  &__content__text {
+    padding: -10px;
+  }
+}

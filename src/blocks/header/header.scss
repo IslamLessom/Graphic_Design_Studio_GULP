@@ -1,0 +1,52 @@
+.header {
+  $self: &;
+  background-image: linear-gradient(
+      to top,
+      rgba(36, 36, 36, 0.3),
+      rgba(48, 47, 47, 0.3)
+    ),
+    url("../../images/source.unsplash.png");
+  background-size: cover;
+  font-family: "Segoe UI";
+  height: 680px;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+
+  &__logo {
+    margin-top: 22px;
+  }
+  &__logo img {
+    width: 111px;
+    height: 34px;
+  }
+
+  &__menu {
+    display: flex;
+    margin-top: 30px;
+  }
+
+  &__menu__ul {
+    display: flex;
+  }
+
+  &__menu__ul a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+  }
+
+  &__button {
+    font-size: 18px;
+    margin-top: 23px;
+    background-color: #575757;
+    color: #b1ff53;
+    height: 40px;
+    width: 170px;
+    line-height: 40px;
+    border-radius: 8px;
+    text-align: center;
+    vertical-align: center;
+  }
+}

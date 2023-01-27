@@ -1,0 +1,47 @@
+.main {
+  $self: &;
+  text-align: left;
+  position: absolute;
+  top: 140px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  left: 350px;
+
+  @include media("<=xlg") {
+    left: 300px;
+  }
+
+  @include media("<=lg") {
+    left: 230px;
+  }
+
+  @include media("<=md") {
+    left: 140px;
+  }
+
+  @include media("<=sm") {
+    left: 110px;
+  }
+
+  @include media("<=xs") {
+    left: 30px;
+  }
+
+  &__text__name {
+    font-size: 40px;
+    font-family: 'Segoe UI' ;
+  }
+
+  &__text__description {
+    font-family: 'Segoe UI';
+    font-size: 22px;
+  }
+
+  mark {
+    background: none;
+    color: #adf159;
+    height: 10px;
+  }
+}
