@@ -1,0 +1,98 @@
+@font-face {
+  font-family: "Segoe UI Regular";
+  src: url("../../fonts/SegoeUIRegular.ttf");
+}
+
+.content {
+  $self: &;
+
+  width: 100%;
+  height: 450px;
+  position: relative;
+  background: #3e4f4e;
+
+  @include media("<=xs") {
+    height: 820px;
+  }
+
+  @include media("<=sm") {
+    height: 820px;
+  }
+
+  mark {
+    color: #b1ff53;
+    background: none;
+  }
+
+  &__name {
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 25px;
+
+    @include media("<=sm") {
+      font-size: 20px;
+    }
+  }
+
+  &__blocks {
+    display: grid;
+    grid-template-columns: 320px 320px 320px;
+    justify-content: center;
+    margin: 10px;
+
+    @include media("<=xlg") {
+      
+    }
+
+    @include media("<=lg") {
+    }
+
+    @include media("<=md") {
+        grid-template-columns: 250px 249px 239px;
+    }
+
+    @include media("<=sm") {
+      grid-template-columns: 320px;
+    }
+
+    @include media("<=xs") {
+      grid-template-columns: 320px;
+    }
+  }
+
+  &__blocks__text {
+    padding: 10px;
+    padding-left: 15px;
+    color: white;
+    font-family: "Segoe UI Regular";
+    font-size: 20px;
+  }
+
+  &__background__img {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    bottom: 5px;
+    right: 0;
+    text-align: center;
+
+    @include media("<=xs") {
+        bottom: 5px;
+      top: 370px;
+      left: 10px;
+    }
+
+    @include media("<=sm") {
+      top: 250px;
+      left: 10px;
+    }
+
+    @include media("<=md") {
+     left: 10px;
+     top: 150px;
+    }
+  }
+}

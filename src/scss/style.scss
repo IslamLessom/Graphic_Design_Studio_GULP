@@ -40,7 +40,7 @@ $breakpoints: (
 
 
 // @include font-face("Roboto-Black", "RBBL");
-// @import "../../node_modules/swiper/swiper";
+@import "../../node_modules/swiper/swiper";
 
 // Import BEM blocks scss
 @import "../blocks/**/*.scss";

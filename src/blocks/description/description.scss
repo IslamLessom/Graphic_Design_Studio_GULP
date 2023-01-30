@@ -8,15 +8,21 @@
   src: url("../../fonts/SegoeUIRegular.ttf");
 }
 
+@font-face {
+  font-family: "Segoe UI Semibold";
+  src: url("../../fonts/SegoeUISemibold.ttf");
+}
+
 .block {
   $self: &;
-  margin-bottom: 100px;
   margin-top: 40px;
 
   &__name {
     text-align: center;
+    font-size: 22px;
     width: 100%;
     margin-bottom: 25px;
+    font-family: "Segoe UI Semibold";
   }
 
   &__content {
@@ -24,6 +30,33 @@
     grid-template-columns: 300px 300px 300px 300px;
     margin: 10px;
     margin-left: 30px;
+    justify-content: center;
+
+    @include media("<=xlg") {
+      justify-content: center;
+      grid-template-columns: 290px 290px;
+      margin-left: 0px;
+    }
+
+    @include media("<=lg") {
+      justify-content: center;
+      grid-template-columns: 300px 300px;
+    }
+
+    @include media("<=md") {
+      grid-template-columns: 300px 300px;
+      justify-content: center;
+    }
+
+    @include media("<=sm") {
+      grid-template-columns: 300px 300px;
+    }
+
+    @include media("<=xs") {
+      grid-template-columns: 300px;
+      justify-content: center;
+      margin-left: 0px;
+    }
   }
 
   &__content__one {
@@ -37,10 +70,21 @@
     padding: 30px;
     width: 220px;
     height: 255px;
+    position: relative;
+
+    @include media("<=xs") {
+      width: 300px;
+      margin-left: -25px;
+      height: 280px;
+    }
   }
 
   &__content__one img {
     margin-left: 30px;
+
+    @include media("<=xs") {
+      margin-left: 70px;
+    }
   }
 
   &__content__one h1 {
@@ -49,15 +93,193 @@
     color: #b1ff53;
     font-family: "Segoe UI", sans-serif;
     padding-left: -10px;
+
+    @include media("<=xs") {
+      margin-left: 15px;
+      font-size: 25px;
+    }
   }
 
   &__content__one p {
     font-size: 15px;
     color: white;
     font-family: "Segoe UI Regular";
+    padding-bottom: 25px;
+
+    @include media("<=xs") {
+      margin-left: 15px;
+      font-size: 20px;
+    }
   }
 
   &__content__text {
     padding: -10px;
+  }
+
+  &__content__two {
+    background-image: linear-gradient(
+        to top,
+        rgba(36, 36, 36, 0.3),
+        rgba(48, 47, 47, 0.3)
+      ),
+      url("../../images/des.block.two.png");
+    margin: 5px;
+    padding: 30px;
+    width: 220px;
+    height: 255px;
+    position: relative;
+
+    @include media("<=xs") {
+      width: 300px;
+      margin-left: -25px;
+      height: 280px;
+    }
+  }
+
+  &__content__two img {
+    margin-left: 54px;
+    margin-top: 20px;
+
+    @include media("<=xs") {
+      margin-left: 70px;
+    }
+  }
+
+  &__content__two h1 {
+    margin-top: 20px;
+    font-size: 17px;
+    color: #b1ff53;
+    font-family: "Segoe UI", sans-serif;
+    padding-left: -10px;
+
+    @include media("<=xs") {
+      margin-left: 15px;
+      font-size: 25px;
+    }
+  }
+
+  &__content__two p {
+    font-size: 15px;
+    color: white;
+    font-family: "Segoe UI Regular";
+    padding-bottom: 25px;
+
+    @include media("<=xs") {
+      margin-left: 15px;
+      font-size: 20px;
+    }
+  }
+
+  &__content__three {
+    background-image: linear-gradient(
+        to top,
+        rgba(36, 36, 36, 0.3),
+        rgba(48, 47, 47, 0.3)
+      ),
+      url("../../images/des.block.three.png");
+    margin: 5px;
+    padding: 30px;
+    width: 220px;
+    height: 255px;
+    position: relative;
+
+    @include media("<=xs") {
+      width: 300px;
+      margin-left: -25px;
+      height: 280px;
+    }
+  }
+
+  &__content__three img {
+    margin-left: 43px;
+    margin-top: 10px;
+
+    @include media("<=xs") {
+      margin-left: 70px;
+    }
+  }
+
+  &__content__three h1 {
+    margin-top: 20px;
+    font-size: 17px;
+    color: #b1ff53;
+    font-family: "Segoe UI", sans-serif;
+    padding-left: -10px;
+
+    @include media("<=xs") {
+      margin-left: 15px;
+      font-size: 25px;
+    }
+  }
+
+  &__content__three p {
+    font-size: 15px;
+    color: white;
+    font-family: "Segoe UI Regular";
+    padding-bottom: 10px;
+
+    @include media("<=xs") {
+      margin-left: 15px;
+      font-size: 20px;
+    }
+  }
+
+  &__content__four {
+    background-image: linear-gradient(
+        to top,
+        rgba(36, 36, 36, 0.3),
+        rgba(48, 47, 47, 0.3)
+      ),
+      url("../../images/des.block.four.png");
+    margin: 5px;
+    padding: 30px;
+    width: 220px;
+    height: 255px;
+    position: relative;
+
+    @include media("<=xs") {
+      width: 300px;
+      height: 280px;
+      margin-left: -25px;
+    }
+  }
+
+  &__content__text {
+    position: absolute;
+    bottom: 0;
+  }
+
+  &__content__four img {
+    margin-left: 43px;
+    margin-top: 28px;
+
+    @include media("<=xs") {
+      margin-left: 70px;
+    }
+  }
+
+  &__content__four h1 {
+    margin-top: 20px;
+    font-size: 17px;
+    color: #b1ff53;
+    font-family: "Segoe UI", sans-serif;
+    padding-left: -10px;
+
+    @include media("<=xs") {
+      margin-left: 15px;
+      font-size: 25px;
+    }
+  }
+
+  &__content__four p {
+    font-size: 15px;
+    color: white;
+    font-family: "Segoe UI Regular";
+    padding-bottom: 13px;
+
+    @include media("<=xs") {
+      margin-left: 15px;
+      font-size: 20px;
+    }
   }
 }

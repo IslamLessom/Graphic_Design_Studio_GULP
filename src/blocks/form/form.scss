@@ -1,0 +1,153 @@
+@font-face {
+  font-family: "Segoe UI";
+  src: url("../../fonts/SegoeUI.ttf");
+}
+
+@font-face {
+  font-family: "Segoe UI Regular";
+  src: url("../../fonts/SegoeUIRegular.ttf");
+}
+
+@font-face {
+  font-family: "Segoe UI Bold";
+  src: url("../../fonts/SegoeUIBold.ttf");
+}
+
+@font-face {
+  font-family: "Segoe UI Semibold";
+  src: url("../../fonts/SegoeUISemibold.ttf");
+}
+
+.form {
+  $self: &;
+
+  margin: 150px;
+  margin-top: 70px;
+  position: relative;
+
+  &__name {
+    font-size: 25px;
+    text-align: center;
+    font-family: "Segoe UI Semibold";
+  }
+
+  &__containers {
+    display: grid;
+    grid-template-columns: 496px 333px;
+    justify-content: center;
+    margin-top: 50px;
+
+    @include media("<=lg") {
+      margin-left: -30px;
+    }
+
+    @include media("<=md") {
+      grid-template-columns: 500px;
+	  margin-left: 125px;
+    }
+
+    @include media("<=sm") {
+		grid-template-columns: 500px;
+		margin-left: 125px;
+    }
+
+    @include media("<=xs") {
+      grid-template-columns: 300px;
+      justify-content: center;
+      margin-left: -80px;
+    }
+  }
+
+  &__container-one {
+    border: 1px #9eab8d solid;
+    padding: 40px;
+    height: 330px;
+    width: 300px;
+    border-radius: 8px;
+    position: relative;
+
+	@include media("<=md") {
+		margin-bottom: 30px;
+	  }
+
+    img {
+      position: absolute;
+      top: -2px;    
+      right: 20px;
+      width: 70px;
+    }
+  }
+
+  &__container-two {
+    border: 1px #ebcb73 solid;
+    padding: 40px;
+    height: 330px;
+    width: 300px;
+    border-radius: 8px;
+    position: relative;
+
+    img {
+      position: absolute;
+      top: -2px;
+      right: 20px;
+      width: 70px;
+    }
+  }
+
+  &__title {
+    text-align: center;
+
+    h2 {
+      font-size: 22px;
+      color: #858585;
+      font-family: "Segoe UI";
+    }
+
+    p {
+      color: #9eab8d;
+      padding-top: 10px;
+      font-size: 16px;
+      font-family: "Segoe UI Bold";
+    }
+  }
+
+  &__price {
+    text-align: center;
+    padding-top: 16px;
+    font-size: 30px;
+    font-family: "Segoe UI Bold";
+  }
+
+  &__price-one {
+    text-align: center;
+    padding-top: 38px;
+    font-size: 30px;
+    font-family: "Segoe UI Bold";
+  }
+
+  &__description {
+    text-align: center;
+    padding-top: 30px;
+    color: #707070;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Segoe UI Regular";
+  }
+
+  &__button {
+    text-align: center;
+    margin-top: 40px;
+
+    button {
+      background-color: #e6e6e6;
+      border: none;
+      width: 160px;
+      height: 40px;
+      color: #3e4f4e;
+      font-size: 17px;
+      border-radius: 8px;
+      font-family: "Segoe UI Bold";
+    }
+  }
+}
