@@ -1,9 +1,8 @@
 import Swiper, { Navigation } from 'swiper';
 
 (() => {
-
 	new Swiper(".portfolio__slider", {
-		spaceBetween: 30,
+		spaceBetween: 32,
 		slidesPerView: 3,
 		loop: true,
 		modules: [Navigation],

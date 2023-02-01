@@ -1,0 +1,123 @@
+.geolocation {
+  $self: &;
+
+  position: relative;
+
+  &__block {
+    display: flex;
+    width: 100%;
+
+    @include media("<=xlg") {
+    }
+
+    @include media("<=lg") {
+    }
+
+    @include media("<=md") {
+      flex-direction: column;
+    }
+
+    @include media("<=sm") {
+      flex-direction: column;
+    }
+
+    @include media("<=xs") {
+      flex-direction: column;
+    }
+  }
+
+  &__map {
+    width: 50%;
+
+	img {
+		height: 100%;
+	}
+
+    @include media("<=md") {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+
+    @include media("<=sm") {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+
+    @include media("<=xs") {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    background-color: #9eab8d;
+    width: 50%;
+    padding: 50px;
+
+    @include media("<=md") {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      padding-bottom: 30px;
+      padding-top: 30px;
+    }
+
+    @include media("<=sm") {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      padding-bottom: 30px;
+      padding-top: 30px;
+    }
+
+    @include media("<=xs") {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      padding-bottom: 30px;
+      padding-top: 30px;
+    }
+
+    img {
+      position: absolute;
+      bottom: 50px;
+      right: 30px;
+      width: 40%;
+    }
+
+    input {
+      padding: 10px;
+      margin: 10px;
+      border-radius: 8px;
+      border: none;
+      width: 90% !important;
+    }
+
+    button {
+      margin-top: 15px;
+      width: 120px;
+	  height: 40px;
+	  font-size: 17px;
+      padding: 10px;
+      background-color: #3e4f4e;
+      color: #b1ff53;
+      border: none;
+      border-radius: 8px;
+      margin-left: 10px;
+    }
+    textarea {
+      resize: none;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 8px;
+      border: none;
+      width: 90% !important;
+	  height: 35%;
+    }
+  }
+}

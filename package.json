@@ -16,10 +16,10 @@
 		"scss",
 		"gulp"
 	],
-	"author": "Alexandr Tumanov <shurinskiy2@gmail.com>",
+	"author": "Alexandr Tumanov , Gasanow Islam>",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/shurinskiy/gulp_scss_starter"
+		"url": "git+https://github.com/IslamLessom/Graphic_Design_Studio_GULP"
 	},
 	"license": "ISC",
 	"devDependencies": {
@@ -52,7 +52,7 @@
 	},
 	"dependencies": {
 		"jquery": "^3.6.0",
-		"swiper": "^8.4.6"
+		"swiper": "^8.4.7"
 	},
 	"externalJs": {
 		"jquery": "dist/jquery.min.js"
@@ -67,6 +67,6 @@
 		"from": "src/**/!(_|temp)*.html",
 		"to": "src/blocks",
 		"js": "src/js/blocks.js",
-		"omit": "@@,js-,active,opened, swiper, title, mark, content"
+		"omit": "@@,js-,active,opened, swiper, title, mark, content,block, container"
 	}
 }

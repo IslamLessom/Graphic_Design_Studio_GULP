@@ -9,44 +9,65 @@
   background-size: cover;
   font-family: "Segoe UI";
   height: 680px;
-  display: flex;
-  justify-content: space-around;
-  position: relative;
+  padding-top: 10px;
 
-  &__logo {
-    margin-top: 22px;
-  }
-  &__logo img {
-    width: 111px;
-    height: 34px;
+  @include media("<=lg") {
+    height: 700px;
   }
 
-  &__menu {
-    display: flex;
-    margin-top: 30px;
+  @include media("<=sm") {
+    height: 800px;
   }
 
-  &__menu__ul {
-    display: flex;
+  @include media("<=xs") {
+    height: 900px;
+  }
+}
+
+.navbar-nav {
+  font-size: 22px;
+
+  li {
+    padding: 5px;
   }
 
-  &__menu__ul a {
-    padding: 10px;
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
+  @include media("<=lg") {
+    display: grid !important;
+    grid-template-columns: 100px 150px 100px 180px 100px;
+    li {
+      padding: 0px;
+      font-size: 20px;
+    }
   }
 
-  &__button {
-    font-size: 18px;
-    margin-top: 23px;
-    background-color: #575757;
-    color: #b1ff53;
-    height: 40px;
-    width: 170px;
-    line-height: 40px;
-    border-radius: 8px;
-    text-align: center;
-    vertical-align: center;
+  @include media("<=md") {
+    display: grid !important;
+    grid-template-columns: 100px 150px 100px 180px 100px;
+    li {
+      padding: 0px;
+      font-size: 20px;
+    }
   }
+
+  @include media("<=sm") {
+    display: grid !important;
+    grid-template-columns: 190px 150px 150px;
+    li {
+      padding: 0px;
+      font-size: 20px;
+    }
+  }
+
+  @include media("<=xs") {
+    display: grid !important;
+    grid-template-columns: 170px 150px 150px;
+    li {
+      padding: 0px;
+      font-size: 20px;
+    }
+  }
+
+
+
+  
 }

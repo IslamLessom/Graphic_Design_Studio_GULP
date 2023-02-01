@@ -23,6 +23,18 @@
   &__text__name {
     font-size: 40px;
     font-family: "Segoe UI";
+
+    @include media("<=lg") {
+     padding-top: 50px;
+    }
+
+    @include media("<=sm") {
+      padding-top: 50px;
+    }
+
+    @include media("<=xs") {
+      padding-top: 50px;
+    }
   }
 
   &__text__description {

@@ -68,14 +68,13 @@
       url("../../images/des.block.one.png");
     margin: 5px;
     padding: 30px;
-    width: 220px;
-    height: 255px;
+    height: 330px;
     position: relative;
 
     @include media("<=xs") {
-      width: 300px;
+      width: 367px;
       margin-left: -25px;
-      height: 280px;
+      height: 349px;
     }
   }
 
@@ -125,14 +124,13 @@
       url("../../images/des.block.two.png");
     margin: 5px;
     padding: 30px;
-    width: 220px;
-    height: 255px;
+    height: 369px;
     position: relative;
 
     @include media("<=xs") {
-      width: 300px;
+      width: 367px;
       margin-left: -25px;
-      height: 280px;
+      height: 349px;
     }
   }
 
@@ -179,14 +177,13 @@
       url("../../images/des.block.three.png");
     margin: 5px;
     padding: 30px;
-    width: 220px;
-    height: 255px;
+    height: 330px;
     position: relative;
 
     @include media("<=xs") {
-      width: 300px;
+      width: 367px;
       margin-left: -25px;
-      height: 280px;
+      height: 369px;
     }
   }
 
@@ -233,14 +230,13 @@
       url("../../images/des.block.four.png");
     margin: 5px;
     padding: 30px;
-    width: 220px;
-    height: 255px;
+    height: 330px;
     position: relative;
 
     @include media("<=xs") {
-      width: 300px;
-      height: 280px;
+      width: 367px;
       margin-left: -25px;
+      height: 369px;
     }
   }
 

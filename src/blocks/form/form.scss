@@ -29,6 +29,13 @@
     font-size: 25px;
     text-align: center;
     font-family: "Segoe UI Semibold";
+
+    @include media("<=xs") {
+      h1 {
+        font-size: 25px;
+      }
+      
+    }
   }
 
   &__containers {
@@ -43,12 +50,12 @@
 
     @include media("<=md") {
       grid-template-columns: 500px;
-	  margin-left: 125px;
+      margin-left: 125px;
     }
 
     @include media("<=sm") {
-		grid-template-columns: 500px;
-		margin-left: 125px;
+      grid-template-columns: 500px;
+      margin-left: 125px;
     }
 
     @include media("<=xs") {
@@ -61,18 +68,18 @@
   &__container-one {
     border: 1px #9eab8d solid;
     padding: 40px;
-    height: 330px;
-    width: 300px;
+    height: 444px;
+    width: 362px;
     border-radius: 8px;
     position: relative;
 
-	@include media("<=md") {
-		margin-bottom: 30px;
-	  }
+    @include media("<=md") {
+      margin-bottom: 30px;
+    }
 
     img {
       position: absolute;
-      top: -2px;    
+      top: -2px;
       right: 20px;
       width: 70px;
     }
@@ -81,8 +88,8 @@
   &__container-two {
     border: 1px #ebcb73 solid;
     padding: 40px;
-    height: 330px;
-    width: 300px;
+    height: 444px;
+    width: 362px;
     border-radius: 8px;
     position: relative;
 

@@ -11,12 +11,25 @@
   position: relative;
   background: #3e4f4e;
 
+  @include media("<=xlg") {
+    height: 570px;
+  }
+
+  @include media("<=lg") {
+    height: 620px;
+  }
+
+  
+  @include media("<=md") {
+    height: 620px;
+  }
+
   @include media("<=xs") {
     height: 820px;
   }
 
   @include media("<=sm") {
-    height: 820px;
+    height: 1150px;
   }
 
   mark {
