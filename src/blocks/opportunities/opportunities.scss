@@ -86,7 +86,7 @@
     }
   }
 
-  &__title {
+  &__title-name {
     color: white;
     font-size: 25px;
     text-align: center;
@@ -121,11 +121,11 @@
     }
   }
 
-  &__block__content {
+  &__content {
     padding: 15px;
   }
 
-  &__block__content__title {
+  &__title {
     color: white;
     font-family: "Segoe UI";
     font-size: 20px;
@@ -136,7 +136,7 @@
     }
   }
 
-  &__block__content__description {
+  &__description {
     color: #bbbbbb;
     padding-top: 12px;
     font-family: "Segoe UI Regular";

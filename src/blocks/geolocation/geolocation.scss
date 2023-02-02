@@ -29,9 +29,9 @@
   &__map {
     width: 50%;
 
-	img {
-		height: 100%;
-	}
+    img {
+      height: 100%;
+    }
 
     @include media("<=md") {
       width: 100%;
@@ -101,9 +101,8 @@
     button {
       margin-top: 15px;
       width: 120px;
-	  height: 40px;
-	  font-size: 17px;
-      padding: 10px;
+      height: 40px;
+      font-size: 17px;
       background-color: #3e4f4e;
       color: #b1ff53;
       border: none;
@@ -117,7 +116,7 @@
       border-radius: 8px;
       border: none;
       width: 90% !important;
-	  height: 35%;
+      height: 35%;
     }
   }
 }

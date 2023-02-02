@@ -1330,7 +1330,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var swip
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _blocks_portfolio_portfolio_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../blocks/portfolio/portfolio.js */ \"./src/blocks/portfolio/portfolio.js\");\n!(function webpackMissingModule() { var e = new Error(\"Cannot find module '../blocks/header/header.js'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\n\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvanMvYmxvY2tzLmpzPzVlM2UiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7QUFBQTtBQUFBO0FBQTBDIiwiZmlsZSI6Ii4vc3JjL2pzL2Jsb2Nrcy5qcy5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBcIi4uL2Jsb2Nrcy9wb3J0Zm9saW8vcG9ydGZvbGlvLmpzXCI7XHJcbmltcG9ydCBcIi4uL2Jsb2Nrcy9oZWFkZXIvaGVhZGVyLmpzXCI7Il0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/js/blocks.js\n");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _blocks_portfolio_portfolio_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../blocks/portfolio/portfolio.js */ \"./src/blocks/portfolio/portfolio.js\");\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvanMvYmxvY2tzLmpzPzVlM2UiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7QUFBQSIsImZpbGUiOiIuL3NyYy9qcy9ibG9ja3MuanMuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgXCIuLi9ibG9ja3MvcG9ydGZvbGlvL3BvcnRmb2xpby5qc1wiOyJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/js/blocks.js\n");
 
 /***/ }),
 

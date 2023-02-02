@@ -1,19 +1,19 @@
 @font-face {
   font-family: "Segoe UI";
-  src: url("../../fonts/SegoeUI.ttf");
+  src: url("././fonts/SegoeUI.ttf");
 }
 
 @font-face {
   font-family: "Segoe UI Regular";
-  src: url("../../fonts/SegoeUIRegular.ttf");
+  src: url("././fonts/SegoeUIRegular.ttf");
 }
 
 @font-face {
   font-family: "Segoe UI Semibold";
-  src: url("../../fonts/SegoeUISemibold.ttf");
+  src: url("././fonts/SegoeUISemibold.ttf");
 }
 
-.block {
+.description {
   $self: &;
   margin-top: 40px;
 
@@ -25,7 +25,7 @@
     font-family: "Segoe UI Semibold";
   }
 
-  &__content {
+  &__contents {
     display: grid;
     grid-template-columns: 300px 300px 300px 300px;
     margin: 10px;
@@ -59,13 +59,13 @@
     }
   }
 
-  &__content__one {
+  &__content-one {
     background-image: linear-gradient(
         to top,
         rgba(36, 36, 36, 0.3),
         rgba(48, 47, 47, 0.3)
       ),
-      url("../../images/des.block.one.png");
+      url("././images/des.block.one.png");
     margin: 5px;
     padding: 30px;
     height: 330px;
@@ -78,7 +78,7 @@
     }
   }
 
-  &__content__one img {
+  &__content-one img {
     margin-left: 30px;
 
     @include media("<=xs") {
@@ -86,7 +86,7 @@
     }
   }
 
-  &__content__one h1 {
+  &__content-one h1 {
     margin-top: 20px;
     font-size: 17px;
     color: #b1ff53;
@@ -99,7 +99,7 @@
     }
   }
 
-  &__content__one p {
+  &__content-one p {
     font-size: 15px;
     color: white;
     font-family: "Segoe UI Regular";
@@ -111,20 +111,20 @@
     }
   }
 
-  &__content__text {
+  &__content-text {
     padding: -10px;
   }
 
-  &__content__two {
+  &__content-two {
     background-image: linear-gradient(
         to top,
         rgba(36, 36, 36, 0.3),
         rgba(48, 47, 47, 0.3)
       ),
-      url("../../images/des.block.two.png");
+      url("././images/des.block.two.png");
     margin: 5px;
     padding: 30px;
-    height: 369px;
+    height: 330px;
     position: relative;
 
     @include media("<=xs") {
@@ -134,7 +134,7 @@
     }
   }
 
-  &__content__two img {
+  &__content-two img {
     margin-left: 54px;
     margin-top: 20px;
 
@@ -143,7 +143,7 @@
     }
   }
 
-  &__content__two h1 {
+  &__content-two h1 {
     margin-top: 20px;
     font-size: 17px;
     color: #b1ff53;
@@ -156,7 +156,7 @@
     }
   }
 
-  &__content__two p {
+  &__content-two p {
     font-size: 15px;
     color: white;
     font-family: "Segoe UI Regular";
@@ -168,13 +168,13 @@
     }
   }
 
-  &__content__three {
+  &__content-three {
     background-image: linear-gradient(
         to top,
         rgba(36, 36, 36, 0.3),
         rgba(48, 47, 47, 0.3)
       ),
-      url("../../images/des.block.three.png");
+      url("././images/des.block.three.png");
     margin: 5px;
     padding: 30px;
     height: 330px;
@@ -187,7 +187,7 @@
     }
   }
 
-  &__content__three img {
+  &__content-three img {
     margin-left: 43px;
     margin-top: 10px;
 
@@ -196,7 +196,7 @@
     }
   }
 
-  &__content__three h1 {
+  &__content-text h1 {
     margin-top: 20px;
     font-size: 17px;
     color: #b1ff53;
@@ -209,7 +209,7 @@
     }
   }
 
-  &__content__three p {
+  &__content-text p {
     font-size: 15px;
     color: white;
     font-family: "Segoe UI Regular";
@@ -221,13 +221,13 @@
     }
   }
 
-  &__content__four {
+  &__content-four {
     background-image: linear-gradient(
         to top,
         rgba(36, 36, 36, 0.3),
         rgba(48, 47, 47, 0.3)
       ),
-      url("../../images/des.block.four.png");
+      url("././images/des.block.four.png");
     margin: 5px;
     padding: 30px;
     height: 330px;
@@ -240,12 +240,12 @@
     }
   }
 
-  &__content__text {
+  &__content-text {
     position: absolute;
     bottom: 0;
   }
 
-  &__content__four img {
+  &__content-four img {
     margin-left: 43px;
     margin-top: 28px;
 
@@ -254,7 +254,7 @@
     }
   }
 
-  &__content__four h1 {
+  &__content-four h1 {
     margin-top: 20px;
     font-size: 17px;
     color: #b1ff53;
@@ -267,7 +267,7 @@
     }
   }
 
-  &__content__four p {
+  &__content-four p {
     font-size: 15px;
     color: white;
     font-family: "Segoe UI Regular";

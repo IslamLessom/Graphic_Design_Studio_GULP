@@ -1,9 +1,9 @@
 @font-face {
   font-family: "Segoe UI Regular";
-  src: url("../../fonts/SegoeUIRegular.ttf");
+  src: url("././fonts/SegoeUIRegular.ttf");
 }
 
-.content {
+.job-features {
   $self: &;
 
   width: 100%;
@@ -19,7 +19,6 @@
     height: 620px;
   }
 
-  
   @include media("<=md") {
     height: 620px;
   }
@@ -56,14 +55,13 @@
     margin: 10px;
 
     @include media("<=xlg") {
-      
     }
 
     @include media("<=lg") {
     }
 
     @include media("<=md") {
-        grid-template-columns: 250px 249px 239px;
+      grid-template-columns: 250px 249px 239px;
     }
 
     @include media("<=sm") {
@@ -75,7 +73,7 @@
     }
   }
 
-  &__blocks__text {
+  &__block-text {
     padding: 10px;
     padding-left: 15px;
     color: white;
@@ -83,7 +81,7 @@
     font-size: 20px;
   }
 
-  &__background__img {
+  &__background {
     position: absolute;
     margin-left: auto;
     margin-right: auto;
@@ -93,7 +91,7 @@
     text-align: center;
 
     @include media("<=xs") {
-        bottom: 5px;
+      bottom: 5px;
       top: 370px;
       left: 10px;
     }
@@ -104,8 +102,8 @@
     }
 
     @include media("<=md") {
-     left: 10px;
-     top: 150px;
+      left: 10px;
+      top: 150px;
     }
   }
 }
