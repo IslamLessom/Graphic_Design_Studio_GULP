@@ -2,14 +2,19 @@
   $self: &;
   color: white;
   text-align: left;
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
   left: 0;
   right: 0;
   top: 130px;
   text-align: center;
-
+  background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(rgba(0, 0, 0, 0.5)),
+      to(rgba(0, 0, 0, 0.5))
+    ),
+    url('../../images/source.unsplash.png') center bottom/cover no-repeat transparent;
+  height: 800px;
 
   @include media("<=sm") {
     left: 110px;
@@ -23,9 +28,10 @@
   &__name {
     font-size: 40px;
     font-family: "Segoe UI";
+    margin-top: 185px;
 
     @include media("<=lg") {
-     padding-top: 50px;
+      padding-top: 50px;
     }
 
     @include media("<=sm") {

@@ -52,6 +52,7 @@
 	},
 	"dependencies": {
 		"jquery": "^3.6.0",
+		"scroll-lock": "^2.1.5",
 		"swiper": "^8.4.7"
 	},
 	"externalJs": {

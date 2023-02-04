@@ -1,39 +1,17 @@
-<header class="header ">
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <a class="navbar-brand text-white" href="#"
-      ><img src="./images/logo.png"
-    /></a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarNav"
-      aria-controls="navbarNav"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-center " id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link text-white" href="#"
-            >О нас <span class="sr-only">(current)</span></a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="#">Портфолио</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="#">Цены</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white disabled" href="#">Преимущества</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white disabled" href="#">Контакты</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-</header>
+<header class="header" data-scroll-lock-fill-gap> 
+	<div class="header__inner container">
+		<a href="#main" class="header__logo"></a>
+		<div class="header__menu" data-scroll-lock-scrollable>
+			<nav class="header__navi">
+				<a class="header__navi-link" href="#description">О нас</a>
+				<a class="header__navi-link" href="#portfolio">Портфолио</a>
+				<a class="header__navi-link" href="#opportunities">Преимущества</a>
+				<a class="header__navi-link" href="#form">Цены</a>
+				<a class="header__navi-link" href="#geolocation">Контакты</a>
+			</nav>
+			<button class="header__menu-close"></button>
+		</div>
+		<a class="header__top-button button" href="./" data-modal="feedback-form">Заказать дизайн</a>
+		<button class="header__menu-toggle"></button>
+	</div>
+</header> 

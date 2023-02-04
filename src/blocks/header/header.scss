@@ -1,73 +1,204 @@
 .header {
-  $self: &;
-  background-image: linear-gradient(
-      to top,
-      rgba(36, 36, 36, 0.3),
-      rgba(48, 47, 47, 0.3)
-    ),
-    url("././images/source.unsplash.png");
-  background-size: cover;
-  font-family: "Segoe UI";
-  height: 680px;
-  padding-top: 10px;
+	$self: &;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+	transition: background-color 0.4s;
+	box-sizing: border-box;
+	position: fixed;
+	z-index: 3;
+	width: 100%;
+	height: 130px;
 
-  @include media("<=lg") {
-    height: 700px;
-  }
+	@include media('<=xs') {
+		height: 90px;
+	}
 
-  @include media("<=sm") {
-    height: 800px;
-  }
+	&_filled {
+		background: none;
+		background-color: #fff;
+		box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.12);
 
-  @include media("<=xs") {
-    height: 900px;
-  }
-}
+		#{$self}__navi-link {
+			color: #3E4F4E;
+		}
 
-.navbar-nav {
-  font-size: 22px;
+		#{$self}__logo {
+			background-image: url('#{$images-path}logo.png');
+		}
 
-  li {
-    padding: 5px;
-  }
+		#{$self}__menu-toggle {
+			
+			background-image: url('#{$images-path}burger.svg#icon-menu-open-view-dark');
+		}
+	}
 
-  @include media("<=lg") {
-    display: grid !important;
-    grid-template-columns: 100px 150px 100px 180px 100px;
-    li {
-      padding: 0px;
-      font-size: 20px;
-    }
-  }
+	&__inner {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		// @include outline();
+	}
 
-  @include media("<=md") {
-    display: grid !important;
-    grid-template-columns: 100px 150px 100px 180px 100px;
-    li {
-      padding: 0px;
-      font-size: 20px;
-    }
-  }
+	&__logo {
+		height: 50px;
+		width: 100%;
+		max-width: 95px;
+		background: url('#{$images-path}logo.png') center / contain no-repeat transparent;
+		margin-right: auto;
+	}
 
-  @include media("<=sm") {
-    display: grid !important;
-    grid-template-columns: 190px 150px 150px;
-    li {
-      padding: 0px;
-      font-size: 20px;
-    }
-  }
+	&__menu {
+		box-sizing: border-box;
+		display: flex;
+		margin: 0 20px;
+		width: 100%;
+		max-width: 660px;		
 
-  @include media("<=xs") {
-    display: grid !important;
-    grid-template-columns: 170px 150px 150px;
-    li {
-      padding: 0px;
-      font-size: 20px;
-    }
-  }
+		@include media('<=md') {
+			display: flex;
+			flex-flow: column nowrap;
+			position: fixed;
+			height: 100vh;
+			backdrop-filter: blur(14px);
+			z-index: 11;
+			right: -500px; top: 0;
+			max-width: 500px;
+			width: 100%;
+			padding: 40px 20px 30px;
+			margin: 0;
+			background-color: rgba(255, 255, 255, 0.85);
+			box-shadow: 5px 0 20px rgb(0 0 0 / 10%);	
+			transition: right 0.3s ease-in;
+			overflow: auto;
+			
+			#{$self}__search {
+				display: flex !important;
+			}
+			
+			&.opened {
+				right: 0;
+			}
+		}
+	}
 
+	&__navi {
+		display: flex;
+		width: 100%;
+		align-items: center;
+		justify-content: space-between;
+		
+		@include media('<=md') {
+			height: 100%;
+			flex-flow: column nowrap;
+			justify-content: center;
+		}
+	}
 
+	&__navi-link {
+		margin: 0 10px;
+		text-decoration: none;
+		white-space: nowrap;
+		color: #fff;
+		position: relative;
+		font-size: 17px;
 
-  
+		&:hover {
+			text-decoration: none;
+			color: rgba(0, 0, 0, 0.788) ;
+		}
+
+		&::after {
+			content: '';
+			box-sizing: border-box;
+			display: block;
+			position: absolute;
+			background-color: #B1FF53;
+			transition: width 0.3s;
+			left: 0px; bottom: -2px;
+			height: 2px;
+			width: 0;
+			
+		}
+
+		&:hover::after {
+			width: 100%;
+		}
+
+		@include media('<=md') {
+			color: #3E4F4E;
+			margin: 20px 0;
+			font-size: 30px;
+
+			&::after {
+				bottom: -8px;
+			}
+		}
+	}
+
+	&__menu-close {
+		@extend %reset-button;
+		display: none;
+		
+		@include media('<=md') {
+			display: block;
+			position: absolute;
+			top: 15px;
+			right: 25px;
+			width: 34px;
+			height: 34px;
+			background: url('#{$images-path}burger.svg#icon-menu-close-view-black') center / 50px 50px no-repeat transparent;
+		}
+	}
+
+	&__top-button {
+		margin-left: auto;
+		width: 100%;
+		max-width: 190px;
+		padding: 15px 10px;
+		background-color: #575757;
+		color: #B1FF53;
+		text-align: center;
+		font-family: "SB", sans-serif;
+		border-radius: 8px;
+		line-height: 1.2;
+		white-space: nowrap;
+		font-size: 16px;
+		transition: text-shadow 0.2s linear;
+
+		&:hover {
+			color: #B1FF53;
+			text-decoration: none;
+		}
+		@include media('<=md') {
+			margin-right: 30px;
+		}
+		
+		@include media('<=xs') {
+			
+			&.button {
+				height: 50px;
+				width: 50px;
+				border-radius: 50%;
+				padding: 0;
+				font-size: 0px;
+				line-height: 1px;
+				color: #575757;
+				background: url('#{$images-path}phone.svg#icon-phone-view-green') center / 32px 32px no-repeat #ffffff;
+				transform: rotate(180)
+			}
+		}
+	}
+
+	&__menu-toggle {
+		@extend %reset-button;
+		display: none;
+		flex-shrink: 0;
+		width: 40px;
+		height: 40px;
+		background: url('#{$images-path}burger.svg') center / 52px 59px no-repeat transparent;
+		color: white;
+		font-size: 150px;
+		@include media('<=md') {
+			display: block;
+		}
+	}
 }

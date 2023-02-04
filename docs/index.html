@@ -35,49 +35,27 @@
   </body>
 </html>
  
-<header class="header ">
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <a class="navbar-brand text-white" href="#"
-      ><img src="./images/logo.png"
-    /></a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarNav"
-      aria-controls="navbarNav"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-center " id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link text-white" href="#"
-            >О нас <span class="sr-only">(current)</span></a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="#">Портфолио</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="#">Цены</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white disabled" href="#">Преимущества</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white disabled" href="#">Контакты</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-</header>
+<header class="header" data-scroll-lock-fill-gap> 
+	<div class="header__inner container">
+		<a href="#main" class="header__logo"></a>
+		<div class="header__menu" data-scroll-lock-scrollable>
+			<nav class="header__navi">
+				<a class="header__navi-link" href="#description">О нас</a>
+				<a class="header__navi-link" href="#portfolio">Портфолио</a>
+				<a class="header__navi-link" href="#opportunities">Преимущества</a>
+				<a class="header__navi-link" href="#form">Цены</a>
+				<a class="header__navi-link" href="#geolocation">Контакты</a>
+			</nav>
+			<button class="header__menu-close"></button>
+		</div>
+		<a class="header__top-button button" href="./" data-modal="feedback-form">Заказать дизайн</a>
+		<button class="header__menu-toggle"></button>
+	</div>
+</header> 
 
 
 
-<main class="main">
+<main class="main" id="main">
     <div class="main__name">
       <p>Студия графического дизайна<mark class="mark">.</mark></br>
       Производство сувенирной продукции<mark class="mark">.</mark></br>
@@ -90,7 +68,7 @@
     </div>  
 </main>
   
-<div class="description">
+<div class="description" id="description">
     <div class="description__name">
       <h1>НАША СТУДИЯ - ЭТО</h1>
     </div>
@@ -126,7 +104,7 @@
     </div>
   </div>
   
-  <div class="job-features">
+  <div class="job-features" id="job-features">
     <div class="job-features__name">
       <h1>СТУДИЯ ГРАФИЧЕСКОГО ДИЗАЙНА "<mark>GRAFICHESKIY DESIGN</mark>"</h1>
     </div>
@@ -159,7 +137,7 @@
     </div>
   </div>
 
-  <section class="portfolio">
+  <section class="portfolio" id="portfolio">
     <div class="portfolio__inner">
       <h2 class="portfolio__title title">Наши работы</h2>
       <div class="portfolio__slider swiper">
@@ -193,7 +171,7 @@
   </section>
 
 
-  <section class="opportunities">
+  <section class="opportunities" id="opportunities">
     <div class="opportunities__title-name">
       <h2>РАБОТАЯ С НАМИ, ВЫ ПОЛУЧАЕТЕ:</h2>
     </div>
@@ -264,7 +242,7 @@
   </section>
 
 
-  <section class="form">
+  <section class="form" id="form">
     <div class="form__name">
       <h1>ФОРМАТЫ СОТРУДНИЧЕСТВА</h1>
     </div>
@@ -308,10 +286,10 @@
     </div>
   </section>
 
-  <section class="geolocation">
+  <section class="geolocation" id="geolocation">
     <div class="geolocation__block">
       <div class="geolocation__map">
-        <img src="./images/map.png" />
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1995.2688099025886!2d30.434681616244333!3d59.99403608189636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469632565f262a63%3A0xc46fb300a9cb4347!2z0J_QuNGB0LrQsNGA0ZHQstGB0LrQuNC5INC_0YAuLCA2Mywg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5NTI3Mw!5e0!3m2!1sru!2sru!4v1675522514398!5m2!1sru!2sru" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     <div class="geolocation__container">
       <input type="text" placeholder="Ваш email">
