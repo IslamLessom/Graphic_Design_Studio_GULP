@@ -13,7 +13,7 @@
       from(rgba(0, 0, 0, 0.5)),
       to(rgba(0, 0, 0, 0.5))
     ),
-    url('../../images/source.unsplash.png') center bottom/cover no-repeat transparent;
+    url('././images/source.unsplash.png') center bottom/cover no-repeat transparent;
   height: 800px;
 
   @include media("<=sm") {
