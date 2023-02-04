@@ -1452,7 +1452,7 @@ body::before {
   right: 0;
   top: 130px;
   text-align: center;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../../images/source.unsplash.png") center bottom/cover no-repeat transparent;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("././images/source.unsplash.png") center bottom/cover no-repeat transparent;
   height: 800px;
 }
 @media (max-width: 780px) {
